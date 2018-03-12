@@ -20,6 +20,7 @@ gulp.task('js', function() {
         'app/libs/waypoints/waypoints.min.js',
         'app/libs/fancybox/jquery.fancybox.min.js',
         'app/libs/animate/animate-css.js',
+        'app/js/jquery.background-video.js',
 
         'app/js/common.js', // Always at the end
 		])
