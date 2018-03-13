@@ -2,17 +2,8 @@
 
 	<div class="header_control_block">
 
+    </div>
 
-
-		<a class="cd-lateral-nav_close">x</a>
-       
-
-	</div>
-
-    <form action="#" class="mobile_search">
-        <input type="text">
-        <button class="button_black">Найти</button>
-    </form>
 
 	<div class="main_menu_mob_wr">
         <ul class="cd-navigation">

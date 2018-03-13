@@ -20,6 +20,7 @@ $(function() {
                 $('body').toggleClass('overflow-hidden');
             });
             $('#cd-lateral-nav').toggleClass('lateral-menu-is-open');
+            $('body').toggleClass('shadow');
 
             //check if transitions are not supported - i.e. in IE9
             if($('html').hasClass('no-csstransitions')) {
@@ -27,25 +28,6 @@ $(function() {
             }
         });
 
-        //close lateral menu clicking outside the menu itself
-
-        $(".cd-lateral-nav_close").on('click', function(event){
-
-            $('#cd-lateral-nav').removeClass('lateral-menu-is-open');
-            //check if transitions are not supported
-            if( !$(event.target).is('#cd-menu-trigger, #cd-menu-trigger span') ) {
-                $lateral_menu_trigger.removeClass('is-clicked');
-                $navigation.removeClass('lateral-menu-is-open');
-                $content_wrapper.removeClass('lateral-menu-is-open').one('transitionend', function(){
-                    $('body').removeClass('overflow-hidden');
-                });
-
-                if($('html').hasClass('no-csstransitions')) {
-                    $('body').removeClass('overflow-hidden');
-                }
-
-            }
-        });
 
 
 

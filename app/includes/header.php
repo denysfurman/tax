@@ -30,8 +30,9 @@
 <body>
 
     <header>
-        ssssssssssssssssss
-        <a id="cd-menu-trigger" href="#0"><span class="cd-menu-icon"></span></a>
+        <a href="#" class="header_logo"><img src="img/log.png" alt=""></a>
+
+        <a id="cd-menu-trigger" href="#0"><i>MЕНЮ</i><span class="cd-menu-icon"></span></a>
     </header>
     <!--  menu  -->
     <?php include('mobile_navigation.php'); ?>

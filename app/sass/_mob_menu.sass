@@ -64,12 +64,23 @@
     display: block
 
 #cd-menu-trigger
-  right: 0
-  top: 11px
+  right: 70px
+  top: 23px
   position: absolute
-  height: 50px
-  width: 50px
+  height: 30px
+  width: 105px
+  color: #fff
+  z-index: 14
 
+  i
+    font-style: normal
+    font-size: 16px
+    font-weight: bold
+    letter-spacing: 4px
+    line-height: 33px
+    margin-right: 3px
+    position: relative
+    left: -7px
   .cd-menu-icon
 
     display: inline-block
@@ -82,7 +93,7 @@
     transform: translateX(-50%) translateY(-50%)
     width: 18px
     height: 2px
-    background-color: #000
+    background-color: #fff
 
     &::before, &:after
       content: ''
@@ -98,7 +109,7 @@
   &.is-clicked .cd-menu-icon
     background-color: rgba(255, 255, 255, 0)
     &::before, &::after
-      background-color: #0a0b0a
+      background-color: #cacaca
     &::before
       bottom: 0
 
@@ -136,7 +147,7 @@
 
 
 
-  transform: translateX(350px)
+  transform: translateX(320px)
   transition: transform 1s ease-in-out
   .cd-navigation
     margin: 10px 0 16px
@@ -189,23 +200,7 @@
       font-weight: 500
 
 
-  .mob_sub_navigation
-    display: block
-    margin-top: 20px
-    a
-      display: block
-      line-height: 2em
-      padding: 0 15px 0 21px
-      font-size: 13px
-      font-weight: bold
-      color: #9da5b4
-      text-transform: uppercase
-      text-decoration: underline
-  .sub-menu
-    margin-bottom: 20px
-  .open_account
-    display: block
-    float: left
+
   a
     transition: none!important
 .open_search
@@ -215,26 +210,7 @@
   margin-top: 3px
 
 
-.mobile_search
-  display: none
-  width: 100%
-  position: absolute
-  margin-top: 5px
-  height: calc(100vh - 100px)
-  background-color: #f8f8f8
-  z-index: 1
 
-  input
-    display: inline-block
-    margin: 0
-    width: calc(100% - 90px)
-    float: left
-    border-radius: 0!important
-  button
-    display: inline-block
-    margin: 0
-    width: 90px
-    float: left
 
 #cd-lateral-nav .open_account
 
@@ -270,3 +246,19 @@
   img
     width: 100%
     z-index: -1
+
+body.shadow
+  position: relative
+  z-index: 13
+  &:before
+    content: ""
+    width: 100%
+    display: inline-block
+    position: absolute
+    left: 0
+    right: 0
+    bottom: 0
+    top: 0
+    background-color: rgba(0, 0, 0, 0.71)
+    z-index: 11
+
